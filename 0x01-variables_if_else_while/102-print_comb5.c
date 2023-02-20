@@ -12,9 +12,9 @@ int main(void)
 	int t;
 	int o;
 
-	for (tens = (ones + 1); tens <= '9'; tens++) /*print first two digit combo*/
+	for (ones = '0'; ones <= '9'; ones++) /*print first two digit combo*/
 {
-		for (ones = '0'; ones <= '9'; ones++)
+		for (tens = (ones + 1); tens <= '9'; tens++)
 		{
 			for (t = '0'; t <= '9'; t++) /*print second of pair*/
 			{

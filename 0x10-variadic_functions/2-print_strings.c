@@ -2,7 +2,8 @@
 #include <stdio.h> /* printf */
 #include "variadic_functions.h"
 
-/*** print_strings - print varying amount of strings
+/**
+ * print_strings - print varying amount of strings
  * @separator: delimiter
  * @n: amount of arguments in list
  */

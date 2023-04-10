@@ -8,18 +8,18 @@
 unsigned int binary_to_unit(const char *b)
 {
 
-	int len = 0, i;
-	unsigned int sum = 0;
+	int i;
+	unsigned int dec_val = 0;
 
-	if (b == NULL)
-		return (sum);
+	if (!b)
+		return (0);
 
 	for (i = 0; b[i]; i++)
 	{
 		if (b[i] < '0' || b[i] > '1')
-			return (sum);
-		sum = 2 * sum + (b[i] - '0');
+			return (0);
+		dec_val = 2 * dec_val + (b[i] - '0');
 	}
 
-	return (sum);
+	return (dec_val);
 }

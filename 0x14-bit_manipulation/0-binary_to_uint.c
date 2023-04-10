@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * binary_to_unit - converrt binary to unsigned int
+ * binary_to_unit - convert binary to unsigned int
  * @b: binary
  * Return: unsigned int
  */
@@ -15,12 +15,12 @@ unsigned int binary_to_unit(const char *b)
 		return (sum);
 
 	/* find string length */
-	while (b[len] != '/0')
+	while (b[len] != '\0')
 		len++;
 	len -= 1;
 
-	/* iterate string and if '1' the multipy by power of 2 */
-	/* get power of 2 via binary (e.g. 1<<2 = 100 in binary = ) */
+	/* iterate string and if '1' the multiply by power of 2 */
+	/* get power of 2 via binary (e.g. 1<<2 = 100 in binary = 4) */
 	i = 0;
 	while (b[i])
 	{
@@ -44,8 +44,8 @@ unsigned int binary_to_unit(const char *b)
  * unsigned int binary_to_unit(const cha *b)
  *{
  *
- *	int len = 0, pow =1;
- *	unsigned int sum = 0, error =0;
+ *	int len = 0, pow = 1;
+ *	unsigned int sum = 0, error = 0;
  *
  *	if (b == NULL)
  *		return (error);
@@ -57,6 +57,9 @@ unsigned int binary_to_unit(const char *b)
  *	while (len >= 0) // iterate from back of string
  *	{
  *		if ((b[len] != '0') && (b[len] != '1'))
+ *			return (error);
+ *
+ *		if (b[len] == '1') // add appropriate power of 2 if '1'
  *			sum += pow;
  *
  *		pow *=2; // update power of 2
@@ -64,5 +67,6 @@ unsigned int binary_to_unit(const char *b)
  *	}
  *
  *	return (sum);
- *
  *}
+ */
+

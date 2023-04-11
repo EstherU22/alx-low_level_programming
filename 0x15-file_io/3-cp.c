@@ -28,8 +28,8 @@ char *create_buffer(char *file)
 }
 
 /**
- * close_file -Closes file descriptors.
- * @fd: The file descripto to be closed.
+ * close_file - Closes file descriptors.
+ * @fd: The file descriptor to be closed.
  */
 void close_file(int fd)
 {
@@ -44,7 +44,7 @@ void close_file(int fd)
 }
 
 /**
- * main - copies the contents of a file to another file.
+ * main - Copies the contents of a file to another file.
  * @argc: The number of arguments supplied to the program.
  * @argv: An array of pointers to the arguments.
  *
@@ -96,7 +96,7 @@ int main(int argc, char *argv[])
 
 	free(buffer);
 	close_file(from);
-	close file(to);
+	close_file(to);
 
 	return (0);
 }

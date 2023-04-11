@@ -2,7 +2,7 @@
 
 /**
  * get_endianness - checks if multbyte data is stored as little or bing endian
- * Return; first value stored, 0 if big endian, 1 if little
+ * Return: first value stored, 0 if big endian, 1 if little
  */
 
 int get_endianness(void)

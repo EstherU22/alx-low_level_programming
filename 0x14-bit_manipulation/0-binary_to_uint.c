@@ -8,7 +8,6 @@
  */
 unsigned int binary_to_unit(const char *b)
 {
-
 	int i;
 	unsigned int dec_val = 0;
 
